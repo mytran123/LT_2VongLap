@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //In ra 50 số đầu tiên của dãy Fibonacci
+    let N = +prompt("Nhập vào số lượng: ");
+    let a = 1;
+    let b = 1;
+    let c = a + b;
+    let count = 2;
+    document.write(a + ',' + b);
+    while (N > count) {
+        c = a + b;
+        a = b;
+        b = c;
+        document.write(',' + c);
+        count++;
+    }
+    document.write( )
+
+//    let num1 = 0;
+//    let num2 = 1;
+//    let count = +prompt("Nhập vào số lượng: ")
+//    document.write("Những số cần tìm là: ")
+//    for (let i = 1; i < count; i++) {
+//        document.write(num2 + ",")
+//        let num3 = num1 + num2
+//        num1 = num2
+//        num2 = num3
+//    }
+</script>
+</body>
+</html>
