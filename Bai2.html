@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="res"></p>
+<script>
+//    Tính giai thừa của một số nguyên dương
+//    Giai thừa là tích từ 1 đến nó
+let num = parseInt(prompt("Nhập số nguyên dương: "));
+let multip = 1;
+for (let i = 1; i <= num; i++) {
+    if (num > 0) {
+        multip = multip * i;
+        document.getElementById("res").innerText = "Giai thừa của " + num + " là: " + multip;
+    } else {
+        alert("Không phải là số nguyên")
+    }
+}
+</script>
+</body>
+</html>
