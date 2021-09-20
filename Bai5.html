@@ -6,7 +6,15 @@
 </head>
 <body>
 <script>
-    //tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng
+    //tính lãi ngân hàng (lãi mẹ đẻ lại con)
+    // khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng
+    let money = parseInt(prompt("Nhap so tien goc: "))
+    let lai = parseInt(prompt("Nhap vao lai suat hang thang: "))
+    let month = parseInt(prompt("Nhap vao so thang gui: "))
+    for(let i = 1; i <= month; i++) {
+        money = money + ( month * (lai / 100))
+    }
+    alert(money)
 </script>
 </body>
 </html>

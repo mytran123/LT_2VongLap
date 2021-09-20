@@ -7,18 +7,16 @@
 <body>
 <p id="res"></p>
 <script>
-//    Tính giai thừa của một số nguyên dương
-//    Giai thừa là tích từ 1 đến nó
-let num = parseInt(prompt("Nhập số nguyên dương: "));
-let multip = 1;
-for (let i = 1; i <= num; i++) {
-    if (num > 0) {
+    // Tính giai thừa của một số nguyên dương
+    // Giai thừa là tích từ 1 đến nó
+
+    let integer = prompt("Nhập vào số nguyên dương: ");
+    let multip = 1;
+    for (let i = 1; i <= integer; i++) {
         multip = multip * i;
-        document.getElementById("res").innerText = "Giai thừa của " + num + " là: " + multip;
-    } else {
-        alert("Không phải là số nguyên")
     }
-}
+    document.write('Giai thừa của ' + integer + ' là ' + multip);
+
 </script>
 </body>
 </html>
